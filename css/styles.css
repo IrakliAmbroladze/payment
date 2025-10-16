@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 body {
   background-color: #f9f8f7;
 }
@@ -8,6 +10,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .main {
@@ -17,12 +22,66 @@ body {
   padding: 41px 64px 10px;
 }
 
-.form {
+form {
   display: flex;
   flex-direction: column;
+  row-gap: 27px;
 }
 
-input {
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  color: #212628;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 48px;
+}
+
+.sub-header {
+  color: #212628;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  opacity: 0.6;
+  margin-bottom: 43px;
+}
+
+.coupon {
   display: block;
-  width: 100%;
+  text-align: center;
+  height: 64px;
+  align-content: center;
+  color: #e1306c;
+  font-weight: 700;
+  size: 18px;
+  line-height: 32px;
+}
+
+#submit {
+  width: 370px;
+  height: 64px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 32px;
+  box-shadow: 2px 4px 15px 0 rgba(222, 49, 111, 0.4);
+  background: linear-gradient(
+    270deg,
+    rgba(194, 53, 132, 1) 0%,
+    rgba(226, 48, 108, 1) 18%,
+    rgba(247, 119, 54, 1) 77%,
+    rgba(250, 150, 62, 1) 100%
+  );
+  cursor: pointer;
+  color: #fff;
+  font-weight: 700;
+  size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.0015em;
+}
+#submit span {
+  text-decoration: line-through;
+  color: rgba(255, 255, 255, 0.6);
+}
+#submit:active {
+  transform: scale(0.98);
 }
