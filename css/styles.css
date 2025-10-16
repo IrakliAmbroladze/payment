@@ -85,3 +85,35 @@ form {
 #submit:active {
   transform: scale(0.98);
 }
+
+.accept-section {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.accept-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: rgba(33, 38, 40, 0.5);
+}
+.accept-text span {
+  color: #de2564;
+  border-bottom: 1px solid;
+}
+
+.checkbox {
+  appearance: none;
+  height: 22px;
+  width: 22px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+.checkbox:checked {
+  background-image: url("../images/check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
