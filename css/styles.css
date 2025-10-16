@@ -22,14 +22,10 @@ body {
   padding: 41px 64px 10px;
 }
 
-.form {
+form {
   display: flex;
   flex-direction: column;
-}
-
-input {
-  display: block;
-  width: 100%;
+  row-gap: 27px;
 }
 
 .main-header {
@@ -59,4 +55,24 @@ input {
   font-weight: 700;
   size: 18px;
   line-height: 32px;
+}
+
+#submit {
+  width: 370px;
+  height: 64px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 32px;
+  box-shadow: 2px 4px 15px 0 rgba(222, 49, 111, 0.4);
+  background: linear-gradient(
+    270deg,
+    rgba(194, 53, 132, 1) 0%,
+    rgba(226, 48, 108, 1) 18%,
+    rgba(247, 119, 54, 1) 77%,
+    rgba(250, 150, 62, 1) 100%
+  );
+  cursor: pointer;
+}
+#submit:active {
+  transform: scale(0.98);
 }
