@@ -72,6 +72,15 @@ form {
     rgba(250, 150, 62, 1) 100%
   );
   cursor: pointer;
+  color: #fff;
+  font-weight: 700;
+  size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.0015em;
+}
+#submit span {
+  text-decoration: line-through;
+  color: rgba(255, 255, 255, 0.6);
 }
 #submit:active {
   transform: scale(0.98);
