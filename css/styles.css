@@ -77,13 +77,14 @@ form {
   size: 18px;
   line-height: 24px;
   letter-spacing: 0.0015em;
+  transition: transform 0.4s ease-in-out;
 }
 #submit span {
   text-decoration: line-through;
   color: rgba(255, 255, 255, 0.6);
 }
 #submit:active {
-  transform: scale(0.98);
+  transform: scale(0.95);
 }
 
 .accept-section {
@@ -116,4 +117,49 @@ form {
   background-image: url("../images/check.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.input,
+.select {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.5);
+  height: 54px;
+  border-radius: 10px;
+  padding-left: 24px;
+  outline: none;
+  font-size: 18px;
+}
+
+.input::placeholder {
+  font-weight: 400;
+}
+
+.date-and-cvv,
+.country-zip {
+  display: flex;
+  column-gap: 20px;
+}
+
+.cvv,
+.zip {
+  width: 120px;
+}
+
+.date,
+.country {
+  flex: 1;
+}
+
+.select {
+  appearance: none;
+  background-image: url("../images/chevron-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 23px center;
+  cursor: pointer;
+}
+
+.card-number {
+  background-image: url("../images/card-icon.svg");
+  background-repeat: no-repeat;
+  background-position: right 25px center;
 }
