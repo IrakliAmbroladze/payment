@@ -14,14 +14,66 @@
         </h1>
         <h2 class="sub-header">Faster Instagram Growsh</h2>
         <form action="./">
-          <input type="text" id="email" name="emain" placeholder="Email" />
-          <input type="text" id="email" name="emain" placeholder="Email" />
-          <input type="text" id="email" name="emain" placeholder="Email" />
-          <input type="text" id="email" name="emain" placeholder="Email" />
-          <input type="text" id="email" name="emain" placeholder="Email" />
-          <input type="text" id="email" name="emain" placeholder="Email" />
-          <input type="text" id="email" name="emain" placeholder="Email" />
-          <input type="text" id="email" name="emain" placeholder="Email" />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            class="input"
+          />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Cardholder Name"
+            class="input"
+          />
+          <input
+            type="text"
+            id="card-number"
+            name="card-number"
+            placeholder="Card Number"
+            class="input card-number"
+          />
+          <div class="date-and-cvv">
+            <input
+              type="text"
+              id="date"
+              name="date"
+              placeholder="Date"
+              class="input date"
+            />
+            <input
+              type="number"
+              id="cvv"
+              name="cvv"
+              placeholder="CVV"
+              class="input cvv"
+            />
+          </div>
+          <div class="country-zip">
+            <select id="country" name="country" class="select country">
+              <option value="">Country</option>
+              <option value="georgia">Georgia</option>
+              <option value="france">France</option>
+              <option value="spain">Spain</option>
+              <option value="usa">USA</option>
+            </select>
+            <input
+              type="number"
+              id="zip"
+              name="zip"
+              placeholder="ZIP"
+              class="input zip"
+            />
+          </div>
+          <input
+            type="text"
+            id="discount-code"
+            name="discount-code"
+            placeholder="Discount Code"
+            class="input"
+          />
           <div class="accept-section">
             <input type="checkbox" class="checkbox" />
             <p class="accept-text">
@@ -29,7 +81,7 @@
               <span>Privacy Policy</span>
             </p>
           </div>
-          <button type="submit" id="submit" name="submit">
+          <button type="submit" id="submit">
             Get started | $199 <span>$249</span>
           </button>
         </form>
